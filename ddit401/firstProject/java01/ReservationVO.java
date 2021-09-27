@@ -1,45 +1,80 @@
 package vo;
 
 public class ReservationVO {
-
+	private int reserveNo;
+	private String startTime;
+	private int adultTk ;
+	private int childTk;
+	private String memId;
+	private int seatNo;
+	private String timeCode;
 	private String routeNo;
-	private String arrivalSpot;
-	private String time;
-	
 	public ReservationVO() {
+		super();
 	}
 	
-	public ReservationVO(String time) {
-		this.time = time;
+	public ReservationVO(int adultTk) {
+		super();
+		this.adultTk = adultTk;
 	}
 
-	public ReservationVO(String routeNo, String arrivalSpot) {
-		this.routeNo = routeNo;
-		this.arrivalSpot = arrivalSpot;
+	public ReservationVO(String startTime) {
+		super();
+		this.startTime = startTime;
 	}
 
+	public int getReserveNo() {
+		return reserveNo;
+	}
+	public void setReserveNo(int reserveNo) {
+		this.reserveNo = reserveNo;
+	}
+	public String getStartTime() {
+		return startTime;
+	}
+	public void setStartTime(String startTime) {
+		this.startTime = startTime;
+	}
+	public int getAdultTk() {
+		return adultTk;
+	}
+	public void setAdultTk(int adultTk) {
+		this.adultTk = adultTk;
+	}
+	public int getChildTk() {
+		return childTk;
+	}
+	public void setChildTk(int childTk) {
+		this.childTk = childTk;
+	}
+	public String getMemId() {
+		return memId;
+	}
+	public void setMemId(String memId) {
+		this.memId = memId;
+	}
+	public int getSeatNo() {
+		return seatNo;
+	}
+	public void setSeatNo(int seatNo) {
+		this.seatNo = seatNo;
+	}
+	public String getTimeCode() {
+		return timeCode;
+	}
+	public void setTimeCode(String timeCode) {
+		this.timeCode = timeCode;
+	}
 	public String getRouteNo() {
 		return routeNo;
 	}
 	public void setRouteNo(String routeNo) {
 		this.routeNo = routeNo;
 	}
-	public String getArrivalSpot() {
-		return arrivalSpot;
-	}
-	public void setArrivalSpot(String arrivalSpot) {
-		this.arrivalSpot = arrivalSpot;
-	}
-	
-	public String getTime() {
-		return time;
-	}
-	public void setTime(String time) {
-		this.time = time;
-	}
+
 	@Override
 	public String toString() {
-		return "노선번호 : " + routeNo + ", 도착지명 : " + arrivalSpot;
+		return null;
 	}
 	
 }
